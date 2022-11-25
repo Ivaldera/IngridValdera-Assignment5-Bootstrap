@@ -1,0 +1,20 @@
+.cell-box {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $grey-100;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: $grey-6;
+  }
+}

@@ -1,0 +1,29 @@
+.task {
+  width: 100%;
+
+  &__list-item {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $grey-3;
+    padding: 5px 0.75rem;
+    border-radius: 8px;
+
+    &--alert {
+      color: $grey-0;
+      background-color: $yellow;
+    }
+
+    &--success {
+      color: $grey-0;
+      background-color: $green;
+    }
+
+    &--disabled {
+      color: $grey-3;
+      background-color: $grey-5;
+    }
+  }
+}

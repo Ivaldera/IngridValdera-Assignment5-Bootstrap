@@ -1,0 +1,8 @@
+.main-content {
+  padding: $padding-unit-main-content;
+  width: 100%;
+
+  @include media-min(medium) {
+    width: calc(100% - #{$width-sidebar});
+  }
+}

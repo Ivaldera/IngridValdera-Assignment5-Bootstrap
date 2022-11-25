@@ -1,0 +1,9 @@
+.content {
+  margin-top: $margin-top-menu;
+
+  @include media-min(medium) {
+    &--full {
+      height: calc(100% - ($padding-unit-main-content + $margin-top-menu + $height-menu));
+    }
+  }
+}

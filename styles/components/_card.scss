@@ -1,0 +1,57 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 1rem;
+  row-gap: 1rem;
+
+  @include media-min(medium) {
+    flex-direction: row;
+    row-gap: unset;
+    column-gap: 30px;
+  }
+}
+
+.flat-card {
+  padding: 1.5rem 2rem;
+  width: 100%;
+
+  @include media-min(medium) {
+    &:hover {
+      border-color: $accent;
+      cursor: pointer;
+    }
+
+    &:hover &__title, &:hover &__indicator {
+      color: $accent;
+    }
+  }
+
+
+  &__title {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: $grey-3;
+    letter-spacing: 0.4px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  &__indicator {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+// Override
+.card {
+  border-radius: 1rem !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}

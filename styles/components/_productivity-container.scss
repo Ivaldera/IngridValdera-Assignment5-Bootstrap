@@ -1,0 +1,12 @@
+.productivity-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  @include media-min(medium) {
+    flex-direction: row;
+    row-gap: unset;
+    column-gap: 30px;
+  }
+}

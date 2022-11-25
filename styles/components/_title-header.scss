@@ -1,0 +1,39 @@
+.title-header {
+  padding: 2rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: $grey-100;
+  }
+
+  &__button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $accent;
+    border: none;
+    background-color: unset;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: $grey-3;
+
+    &--strong {
+      font-weight: 600;
+    }
+  }
+}

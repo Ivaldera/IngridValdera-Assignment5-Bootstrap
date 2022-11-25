@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+
+<div class="main-container">
+  <div class="sidebar offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="sidebar__header">
+      <h2 class="sidebar__header-title">Ingrid Dashboard</h2>
+      <button type="button" class="btn-close d-md-none" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <ul class="menu-sidebar">
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="index.html">
+          <i class="bi bi-pie-chart-fill menu-sidebar__icon"></i>
+          Overview
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href=tickets.html>
+          <i class="bi bi-ticket-perforated-fill menu-sidebar__icon"></i>
+          Tickets
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-lightbulb-fill menu-sidebar__icon"></i>
+          Ideas
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-people-fill menu-sidebar__icon"></i>
+          Contacts
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-person-square menu-sidebar__icon"></i>
+          Agents
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-journal-album menu-sidebar__icon"></i>
+          Articles
+        </a>
+      </li>
+    </ul>
+
+    <span class="horizontal-separator"></span>
+
+    <ul class="menu-sidebar">
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-gear-fill menu-sidebar__icon"></i>
+          Settings
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-award-fill menu-sidebar__icon"></i>
+          Subscription
+        </a>
+      </li>
+    </ul>
+
+  </div>
+  <div class="sidebar d-none d-lg-block">
+    <div class="sidebar__header">
+      <img class="main-logo" src="/assets/logodashboard-01.png" alt="Logo del dashboard">
+      <h2 class="sidebar__header-title">Ingrid Dashboard</h2>
+    </div>
+    <ul class="menu-sidebar">
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="index.html">
+          <i class="bi bi-pie-chart-fill menu-sidebar__icon"></i>
+          Overview
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href=tickets.html>
+          <i class="bi bi-ticket-perforated-fill menu-sidebar__icon"></i>
+          Tickets
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-lightbulb-fill menu-sidebar__icon"></i>
+          Ideas
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-people-fill menu-sidebar__icon"></i>
+          Contacts
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-person-square menu-sidebar__icon"></i>
+          Agents
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-journal-album menu-sidebar__icon"></i>
+          Articles
+        </a>
+      </li>
+    </ul>
+
+    <span class="horizontal-separator"></span>
+
+    <ul class="menu-sidebar">
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-gear-fill menu-sidebar__icon"></i>
+          Settings
+        </a>
+      </li>
+      <li class="menu-sidebar__item">
+        <a class="menu-sidebar__link" href="#">
+          <i class="bi bi-award-fill menu-sidebar__icon"></i>
+          Subscription
+        </a>
+      </li>
+    </ul>
+
+  </div>
+  <div class="main-content">
+    <header class="menu">
+      <button class="hamburger-button hamburger-button--menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <span class="hamburger-button__line"></span>
+        <span class="hamburger-button__line"></span>
+        <span class="hamburger-button__line"></span>
+      </button>
+      <h2>Overview</h2>
+      <div class="d-flex flex-nowrap align-items-center">
+        <button class="clean-button d-none d-lg-inline-block"><i class="bi bi-search"></i></button>
+        <button class="clean-button d-none d-lg-inline-block"><i class="bi bi-bell"></i></button>
+
+        <span class="vertical-separator"></span>
+
+        <span class="d-none d-lg-inline-block">Jones Ferdinand</span>
+        <img class="avatar avatar--menu" src="/assets/user.jpg" alt="Usuario">
+      </div>
+    </header>
+    <main class="content">
+      <div class="cards">
+        <div class="card flat-card">
+          <div class="card-body">
+            <h3 class="flat-card__title">Unresolved</h3>
+            <p class="flat-card__indicator">60</p>
+          </div>
+        </div>
+        <div class="card flat-card">
+          <div class="card-body">
+            <h3 class="flat-card__title">Overdue</h3>
+            <p class="flat-card__indicator">16</p>
+          </div>
+        </div>
+        <div class="card flat-card">
+          <div class="card-body">
+            <h3 class="flat-card__title">Open</h3>
+            <p class="flat-card__indicator">43</p>
+          </div>
+        </div>
+        <div class="card flat-card">
+          <div class="card-body">
+            <h3 class="flat-card__title">On hold</h3>
+            <p class="flat-card__indicator">64</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-container">
+        <div class="card p-4">
+          <div class="card-body chart-container__body">
+            <canvas id="example-chat"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="productivity-container">
+        <div class="card ticket">
+          <div class="card-body">
+            <div class="title-header">
+              <div class="title-header__wrapper">
+                <h3 class="title-header__title">Unresolved tickets</h3>
+                <button class="title-header__button">
+                  View details
+                </button>
+              </div>
+              <div>
+                <span class="title-header__subtitle">Group:</span>
+                <span class="title-header__subtitle title-header__subtitle--strong">Support</span>
+              </div>
+            </div>
+
+            <ul class="grouped-list">
+              <li class="grouped-list__item">
+                <span class="grouped-list__item-spacing grouped-list__item-between">
+                  <span class="grouped-list__title">Waiting on Feature Request</span>
+                  <span class="grouped-list__indicator">4238</span>
+                </span>
+              </li>
+              <li class="grouped-list__item">
+                <span class="grouped-list__item-spacing grouped-list__item-between">
+                  <span class="grouped-list__title">Awaiting Customer Response</span>
+                  <span class="grouped-list__indicator">1005</span>
+                </span>
+              </li>
+              <li class="grouped-list__item">
+                <span class="grouped-list__item-spacing grouped-list__item-between">
+                  <span class="grouped-list__title">Awaiting Developer Fix</span>
+                  <span class="grouped-list__indicator">914</span>
+                </span>
+              </li>
+              <li class="grouped-list__item">
+                <span class="grouped-list__item-spacing grouped-list__item-between">
+                  <span class="grouped-list__title">Pending</span>
+                  <span class="grouped-list__indicator">281</span>
+                </span>
+            </ul>
+          </div>
+        </div>
+        <div class="card task">
+          <div class="card-body">
+            <div class="title-header">
+              <div class="title-header__wrapper">
+                <h3 class="title-header__title">Tasks</h3>
+                <button class="title-header__button">
+                  View all
+                </button>
+              </div>
+
+              <span class="title-header__subtitle">Today</span>
+            </div>
+
+            <ul class="grouped-list">
+              <li class="grouped-list__item">
+                <span class="grouped-list__item-spacing grouped-list__item-between">
+                  <label>
+                    <input class="input" placeholder="Create new task">
+                  </label>
+                  <button class="button"><i class="bi bi-plus-lg"></i></button>
+                </span>
+              </li>
+              <li class="grouped-list__item">
+                <span class="grouped-list__item-spacing grouped-list__item-between">
+                  <span>
+                    <label>
+                      <input class="form-check-input" type="radio">
+                    </label>
+                    <span class="grouped-list__title grouped-list__title--task">Finish ticket update</span>
+                  </span>
+                  <span class="task__list-item task__list-item--alert">Urgent</span>
+                </span>
+              </li>
+              <li class="grouped-list__item">
+                <span class="grouped-list__item-spacing grouped-list__item-between">
+                  <span>
+                    <label>
+                      <input class="form-check-input" type="radio">
+                    </label>
+                    <span class="grouped-list__title grouped-list__title--task">Create new ticket example</span>
+                  </span>
+                  <span class="task__list-item task__list-item--success">New</span>
+                </span>
+              </li>
+              <li class="grouped-list__item">
+                <span class="grouped-list__item-spacing grouped-list__item-between">
+                  <span>
+                    <label>
+                      <input class="form-check-input" type="radio" checked>
+                    </label>
+                    <span class="grouped-list__title grouped-list__title--task">Update ticket report</span>
+                  </span>
+                  <span class="task__list-item task__list-item--disabled">Default</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="scripts/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>

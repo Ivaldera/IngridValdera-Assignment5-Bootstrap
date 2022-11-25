@@ -1,0 +1,15 @@
+.horizontal-separator {
+  height: 1px;
+  background-color: rgba($grey-4, 0.1);
+  width: 100%;
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+.vertical-separator {
+  height: 32px;
+  width: 1px;
+  background-color: $grey-4;
+  margin: 0 2rem;
+  display: inline-block;
+}
